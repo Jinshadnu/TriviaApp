@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.Question2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_icon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/appscrip_icon"/>
+
+            <TextView
+                android:id="@+id/text_Question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Who is the Best Cricketer in the World?"
+                android:layout_below="@+id/image_icon"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+            <RadioGroup
+                android:id="@+id/options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/text_Question1">
+
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sachin Tendulkar"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"/>
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Virat Kohli"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adam Gilchirst"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jacques Kallis"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/options"
+                android:ems="13"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:background="@drawable/button_border"
+                android:text="Next ->" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
